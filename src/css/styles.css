@@ -1,0 +1,59 @@
+body {
+  background-color: #292929;
+  color: #fff;
+}
+
+.tulips-heading {
+  margin: 0 auto;
+}
+
+.update-btn {
+  background-color: #292929;
+  border-color: #fff;
+}
+
+.update-btn:focus,
+.update-btn:hover {
+  color: #292929;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  .tulip-card-body {
+    width: 90%;
+  }
+  .navbar-heading {
+    font-size: 25px;
+  }
+}
+
+/* ------------------------------------------
+                    LOADER
+--------------------------------------------- */
+#loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #444444;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

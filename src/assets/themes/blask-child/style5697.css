@@ -1,0 +1,191 @@
+/* 
+Theme Name:		 Blask-Child
+Theme URI:		 http://childtheme-generator.com/
+Description:	 Blask-Child is a child theme of Blask, created by ChildTheme-Generator.com
+Author:			 Immagine23
+Author URI:		 http://childtheme-generator.com/
+Template:		 blask
+Version:		 1.0.0
+Text Domain:	 blask-child
+*/
+
+
+/*
+    Add your custom styles here
+*/
+
+/*cabmio colori , fondo nero testi bianchi*/
+
+body {
+    background: #292929;
+    color: #fff;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #fff;
+}
+body .main-navigation a,
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.entry-content a,
+.entry-summary a,
+.page-content a,
+body a{
+    color: #fff;
+}
+body .main-navigation a:hover,
+body a:hover,
+.entry-content a:hover,
+.entry-summary a:hover,
+.page-content a:hover{
+    color: #eee;
+}
+
+.entry-content a,
+.entry-summary a,
+.page-content a{
+    border-color: #fff;
+}
+.comment-navigation a:hover,
+.posts-navigation a:hover,
+.post-navigation a:hover,
+.entry-content a:hover,
+.entry-summary a:hover,
+.page-content a:hover{
+    border-color: #eee;
+}
+
+body .main-navigation .dropdown-toggle {
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+/*gdpr banner*/
+body #ct-ultimate-gdpr-cookie-popup.ct-ultimate-gdpr-cookie-popup-classic #ct-ultimate-gdpr-cookie-content {
+    margin-bottom: 15px !important;
+}
+
+body #ct-ultimate-gdpr-cookie-popup .ct-ultimate-gdpr-cookie-popup-bottomPanel {
+    padding: 0;
+}
+#ct-ultimate-gdpr-cookie-content a {
+    color: #fff;
+    font-weight: bold;
+}
+
+body #ct-ultimate-gdpr-cookie-popup.ct-ultimate-gdpr-cookie-popup-classic #ct-ultimate-gdpr-cookie-accept, body #ct-ultimate-gdpr-cookie-popup.ct-ultimate-gdpr-cookie-popup-classic #ct-ultimate-gdpr-cookie-read-more {
+    display: inline-block;
+    margin: 0px 10px !important;
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    #ct-ultimate-gdpr-cookie-content {
+        max-height: 100px;
+        overflow-y: auto;
+    }
+
+}
+
+/*menu privacy*/
+.privacy-head ul {
+    padding: 0;
+    margin: 0;
+}
+.privacy-head ul li {
+    list-style: none;
+    font-size: 12px;
+
+}
+.privacy-head ul li a{
+    color: #999;
+}
+
+
+/*menu evidenza*/
+.top-featured-head{
+    margin-bottom: 30px;
+}
+.top-featured-head ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+} 
+
+.top-featured-head ul li {
+    list-style: none;
+    border: 1px solid;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 48%;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.top-featured-head ul li:nth-child(odd) {
+    margin-right: 1%;
+}
+  
+.top-featured-head ul li:nth-child(even) {
+    margin-left: 1%;
+}
+
+
+.top-featured-head ul li:focus{
+    color:#fff;
+}
+/*logo*/
+header#masthead .site-logo {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+@media screen and (max-width:768px){
+    header#masthead{
+        text-align: center;
+    }
+    header#masthead .site-logo{
+        width: auto;
+    }
+}
+
+/**loop portfolio home**/
+.jetpack-portfolio .portfolio-thumbnail .project-title {
+    font-size: 1.4rem;
+    width: 80%;
+}
+
+
+
+.portfolio-thumbnail a:hover::after {
+    box-shadow: inset 0 0 0 10px #444;
+}
+
+
+/*main menu laterale*/
+.main-navigation a {
+    padding: 6px 0;
+}
+
+
+body.home .wp-block-columns .hentry.portfolio-entry {
+    margin: 0;
+}
+
+
+
+body.single-jetpack-portfolio .entry-meta, 
+body.single-jetpack-portfolio .post-navigation {
+    display: none;
+}
+
+
+

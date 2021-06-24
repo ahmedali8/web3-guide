@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tulips and Oracles - dartco</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <link
+      rel="icon"
+      href="./assets/images/cropped-favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="./assets/images/cropped-favicon-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./assets/images/cropped-favicon-180x180.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container text-center">
+      <!-- Navbar Start -->
+      <nav
+        class="navbar navbar-expand-lg bg-transparent justify-content-center"
+      >
+        <a
+          href="https://www.dartco.art/"
+          class="navbar-brand text-white font-weight-bold"
+        >
+          <img
+            class="logo"
+            width="120"
+            src="./assets/images//dartco-white-220x188.png"
+            class="site-logo attachment-blask-site-logo"
+            alt=""
+            loading="lazy"
+            data-size="blask-site-logo"
+            itemprop="logo"
+            srcset="
+              https://www.dartco.art/wp-content/uploads/2020/11/dartco-white-220x188.png 220w,
+              https://www.dartco.art/wp-content/uploads/2020/11/dartco-white-300x256.png 300w,
+              https://www.dartco.art/wp-content/uploads/2020/11/dartco-white.png         400w
+            "
+            sizes="(max-width: 220px) 100vw, 220px"
+          />
+        </a>
+        <h1 class="text-white text-uppercase navbar-heading">
+          Tulips and Oracles
+        </h1>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="networkLink"
+          class="badge badge-light mx-2"
+        >
+          <span id="networkName">Matic</span>
+          <i class="bi bi-link-45deg"></i
+        ></a>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Loader -->
+      <div id="loader" class="center"></div>
+
+      <!-- Main Content Start -->
+      <main id="container">
+        <!-- Main Heading Start -->
+        <!-- <section class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="text-white text-uppercase">Tulips and Oracles</h1>
+          </div>
+        </section> -->
+        <!-- Main Heading End -->
+
+        <div class="card bg-transparent mb-5">
+          <div class="card-body mx-auto tulip-card-body">
+            <div id="updateForm" style="display: none">
+              <div class="form-row align-items-center justify-content-around">
+                <div class="col-auto">
+                  <input
+                    type="text"
+                    class="form-control bg-dark mb-2"
+                    placeholder="Enter city name"
+                    id="cityInput"
+                    required
+                  />
+                </div>
+                <div class="col-auto">
+                  <button
+                    type="submit"
+                    id="cityBtn"
+                    class="btn btn-primary update-btn mb-2"
+                  >
+                    Update Art
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            id="nftImage"
+            title="tulips and oracles"
+            src=""
+            class="card-img-top"
+            alt="tulips and oracles"
+          />
+        </div>
+      </main>
+      <!-- Main Content End -->
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.0/web3.min.js"
+      integrity="sha512-ppuvbiAokEJLjOUQ24YmpP7tTaLRgzliuldPRZ01ul6MhRC+B8LzcVkXmUsDee7ne9chUfApa9/pWrIZ3rwTFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/contract-abi.js"></script>
+    <script src="./js/abi-setter.js"></script>
+    <script src="./js/web3.js"></script>
+  </body>
+</html>
